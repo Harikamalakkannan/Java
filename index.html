@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <Center> CRUD OPERATION</Center>
+        </title>
+    </head>
+<body>
+
+	<hr>
+			<div class="customer_entry">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <form onEdit="event.preventDefault();onFormEdit();" autocomplete="off">
+                        <form onDelete="event.preventDefault();onFormDelete();" autocomplete="off">
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div><br>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="text" name="email" id="email">
+                    </div><br>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div><br>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div><br>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>              
+                </form>
+		</div>
+		<br/>
+        <div class = "customer_entry">
+            <table class="list" id="customerlist">
+                <th>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email Id</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                
+                    </tr>
+                </th>
+            </table>
+    <script src="script.js"></script>
+</body>
+</html>
